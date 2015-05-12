@@ -1,0 +1,40 @@
+@import "grid";
+
+/* heights are so i can see the grid */
+
+body {
+	margin: 0;
+}
+
+.main {
+	@include grid;
+}
+
+header {
+	@include col-1-1;
+	height: 10vh;
+}
+
+article {
+	@include col-2-3;
+	height: 80vh;
+	@include grid;
+}
+
+article > div {
+	@include col-1-3;
+	border: 1px solid white;
+	height: 200px;
+	background-color: #15091f;
+}	
+
+aside {
+	@include col-1-3;
+	height: 80vh;
+}
+
+footer {
+	@include col-1-1;
+	height: 10vh;
+}
+
